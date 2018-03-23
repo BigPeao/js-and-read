@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>落尘文学_原创网络文学,免费手机小说阅读</title>
+    <meta name="keywords" content="落尘文学,小说排行榜,小说排行,手机阅读" />
+    <meta name="description" content="落尘文学提供恐怖小说、灵异小说、玄幻小说、武侠小说、都市小说等小说在线阅读、手机阅读。" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+        /*reset*/
+
+        html,
+        body,
+        div,
+        p,
+        span,
+        em,
+        i,
+        u,
+        del,
+        strong,
+        a,
+        b,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        iframe,
+        form,
+        label,
+        button,
+        input,
+        textarea,
+        pre,
+        hr,
+        table,
+        tbody,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+            word-wrap: break-word;
+            word-break: break-all
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        button,
+        input,
+        select,
+        textarea {
+            font-size: 100%;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.5;
+            -webkit-user-select: none;
+            color: #333;
+            fill: currentColor;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-text-size-adjust: none;
+            -webkit-touch-callout: none
+        }
+
+        em,
+        i {
+            font-style: normal
+        }
+
+        ul,
+        ol {
+            list-style: none
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle
+        }
+
+        input,
+        select,
+        textarea {
+            font-family: inherit;
+            box-sizing: border-box
+        }
+
+        input[type=text] {
+            -webkit-border-radius: 0
+        }
+
+        input[type=button],
+        input[type=submit],
+        input[type=file],
+        button {
+            cursor: pointer;
+            -webkit-appearance: none;
+        }
+
+        img {
+            display: block
+        }
+
+        a {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            text-decoration: none;
+            color: inherit;
+            outline: 0
+        }
+
+        body.iphone a[href]:active,
+        body.iphone button:active {
+            background-image: none
+        }
+        
+        .swiper {
+            position: relative;
+            overflow: hidden;
+            height: 120px;
+        }
+        
+        .swiper-Content {
+            height: 100px;
+            position: absolute;
+        }
+        
+        .swiper-item {
+            width: 100%;
+            height: 100px;
+            float: left;
+        }
+        
+        .swiper-item img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .line {
+            height: 20px;
+            width: 100%;
+            background-color: #5f5b5b;
+            position: relative;
+            margin-top: 10px;
+        }
+        
+        .sub-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: red;
+        }
+
+
+        .mask{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.4);}
+        .mask .maskBox{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);width: 80%;background-color: #fff;min-height: 100px;border-radius: 5px;-webkit-border-radius: 5px;}
+        .mask .maskBox .mask-delete{position: absolute;right: 10px;top: 10px;width: 20px;height: 20px;background-color: red;}
+
+        .layer{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,.4);}
+        .layer .layerBox{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);width: 80%;background-color: #fff;min-height: 100px;border-radius: 5px;-webkit-border-radius: 5px;}
+        .layer .layerBox .layer-delete{position: absolute;right: 10px;top: 10px;width: 20px;height: 20px;background-color: red;}
+
+    </style>
+</head>
+
+<body>
+<!-- 主容器 首页 wrapper-->
+<!--<div class="swiper" id='swiper'>-->
+    <!--<ul class="swiper-Content">-->
+        <!--<li class="swiper-item swiper-item-1"><img src='img/mark-adv.png' />1</li>-->
+        <!--<li class="swiper-item swiper-item-2"><img src='img/mark-adv.png' />2</li>-->
+        <!--<li class="swiper-item swiper-item-3"><img src='img/mark-adv.png' />3</li>-->
+        <!--<li class="swiper-item swiper-item-4"><img src='img/mark-adv.png' />4</li>-->
+    <!--</ul>-->
+<!--</div>-->
+<!--<div class="line">-->
+    <!--<div class='sub-line' id="sub-line"></div>-->
+<!--</div>-->
+<div class="mask" id="mask">
+    <div class="maskBox">
+        <p class="mask-delete"></p>
+    </div>
+</div>
+<script type="text/javascript">
+    //        var siwper = function() {
+    //            var swiper = document.getElementById("swiper"),
+    //                swiperContent = swiper.getElementsByTagName("ul")[0],
+    //                swiperItem = swiperContent.getElementsByTagName("li"),
+    //                touchStartX,touchStartY,touchMoveX,touchMoveY,touchEndX,touchEndY;
+    //                swiperItem[0].style.width= window.screen.width+'px';
+    //            swiperItem[1].style.width= window.screen.width+'px';
+    //            swiperItem[2].style.width= window.screen.width+'px';
+    //            swiperItem[3].style.width= window.screen.width+'px';
+    //            var itemW=swiperItem[0].clientWidth;
+    //            swiperContent.style.width=itemW*swiperItem.length+'px';
+    //
+    //
+    //            //js的模块化 只是一个单例模式 是对数据和功能的封装
+    //            //js的组件化 只是注重于ui层 在对于页面的弹出窗和一些公共的组件复用
+    //            return{
+    //                dragFun:function(){
+    //                    swiperContent.addEventListener("touchstart",function (e) {
+    //                        touchStartX=e.touches[0].clientX;
+    //                        touchStartY=e.touches[0].clientY;
+    //                        e.target.parentElement.nextElementSibling.classList.toggle("type");
+    //                        e.target.parentElement.previousElementSibling.classList.toggle("name");
+    //                        e.target.parentElement.classList.add("active");
+    //                        debugger
+    //                        console.log(touchStartX&&touchStartY)
+    //                    },false)
+    //                    swiperContent.addEventListener("touchmove",function (e) {
+    //                        touchMoveX=e.touches[0].clientX;
+    //                        touchMoveY=e.touches[0].clientY;
+    //                        console.log(touchMoveX&&touchMoveY)
+    //                    },false)
+    //                    swiperContent.addEventListener("touchend",function (e) {
+    //                        touchEndX=e.changedTouches[0].clientX;
+    //                        touchEndY=e.changedTouches[0].clientY;
+    //                        console.log(touchEndX&&touchEndY);
+    ////                        if(touchEndX-touchStartX>itemW/2){
+    ////                            alert(1);
+    ////                        }else{
+    ////                            alert(2)
+    ////                        }
+    //                    },false)
+    //                }
+    //            }
+    //        }
+    //        siwper().dragFun();
+//    document.onreadystatechange = function() {
+//        if (document.readyState == "loading") {
+//            debugger
+//        } else if (document.readyState == "complete") {
+//            console.log(2)
+//
+//        }
+//    }
+//
+//    function scrollW() {
+//        var subLine = document.getElementById("sub-line"),
+//            n = 0;
+//        setTimeout(function() {
+//
+//
+//        }, 1000)
+//    }
+//    scrollW();
+    //        debugger
+
+    var Layer=window.Layer||{};
+    Layer=(function(){
+        var getElem=function(obj){
+            if(obj.layer){
+                return false;
+            }else{
+                var div=document.createElement("div");
+                div.setAttribute("id","layer");
+                document.getElementsByTagName("body")[0].appendChild(div);
+            }
+        };
+        var bindE=function(obj){
+            obj.addEventListener("click",function(){
+                alert(1);
+            },false)
+        };
+        var F=function(){
+
+        };
+        F.prototype.bindEvent=function(){
+            bindE(this)
+        };
+        F.prototype.isShow=function (config) {
+            this.layer=document.getElementById(config.id);
+            getElem(this);
+            return this;
+        }
+        return F;
+    })();
+    var mask=document.getElementById("mask");
+    mask.onclick=function(){
+        new Layer().isShow({id:"mask"});
+    }
+</script>
+</body>
+
+</html>
