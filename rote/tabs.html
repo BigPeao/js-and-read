@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>落尘文学_原创网络文学,免费手机小说阅读</title>
+    <meta name="keywords" content="落尘文学,小说排行榜,小说排行,手机阅读" />
+    <meta name="description" content="落尘文学提供恐怖小说、灵异小说、玄幻小说、武侠小说、都市小说等小说在线阅读、手机阅读。" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <style>
+        .rote-container .rote-item {
+            width: 2rem;
+            height: 2rem;
+            background: url(img/rote-c.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        .rote-container .rote-item-a {
+            background: url(img/rote-a.png) no-repeat;
+            background-size: 100% 100%;
+        }
+        .toast-top{background: rgba(0,0,0,0.5);color: #fff;}
+        .toast-midle{background: rgba(0,0,0,0.5);color: #fff;}
+    </style>
+</head>
+
+<body>
+    <ul class="rote-container flex">
+        <li class="rote-item"></li>
+        <li class="rote-item"></li>
+        <li class="rote-item"></li>
+        <li class="rote-item"></li>
+    </ul>
+    <script type="text/javascript">
+        // var rote = document.getElementsByClassName("rote-item");
+        // for (var i = 0; i < rote.length; i++) {
+        //     var index = rote[i];
+        //     rote[i].index = i;
+        //     rote[i].onclick = function(e) {
+        //         // for (var j = 0; j < rote.length; j++) {
+        //         //     rote[j].className = "rote-item";
+        //         // }
+        //         // for(var j=0;j<rote.length;j++){
+        //         //     rote[this.index]
+        //         // }
+        //         rote[this.index].className = "rote-item rote-item-a";
+        //         console.log(this.index)
+        //             // debugger
+        //     }
+        // }
+
+        var toast=(function(){
+            function Toast(msg,options){
+                this.options=options||{};
+                this.msg=msg;
+                this.init();
+            }
+            Toast.prototype.init=function(){
+                this.render();
+            }
+            Toast.prototype.render=function(){
+                var toast=document.getElementById("toast");
+                if(toast){
+                    return;
+                }else{
+                    var bd=document.getElementsByTagName("body")[0];
+                    var toastContainer=document.createElement("div");
+                    toastContainer.setAttribute("id","toast");
+                    toastContainer.innerHTML=this.msg;
+                    switch(this.options.position){
+                        case "top":
+                        toastContainer.setAttribute("class","toast-top");
+                        break;
+
+                        case "midle":
+                        toastContainer.setAttribute("class","toast-midle");
+                        break;
+
+                        case "botm":
+                        toastContainer.setAttribute("class","toast-botm");
+                        break;
+                    }
+                    bd.appendChild(toastContainer);
+                }
+            }
+            return Toast;
+        }());
+
+        var a=new toast("尼玛吗炸了",{position:"midle"});
+
+        //匿名函数
+        // (function() {
+
+        // }())
+        // //回调函数
+        // var fun = function(callback) {
+        //         if (typeof callback == "function") {
+        //             callback();
+        //         }
+        //     }
+        //     //递归函数 主要使用场景在于遍历查找
+        // var fn = function(n) {
+        //     if (n == 1) {
+        //         return 1;
+        //     }
+        //     return fn(n - 1) + n;
+        // }
+        // console.log(fn(10));
+    </script>
+</body>
+
+</html>

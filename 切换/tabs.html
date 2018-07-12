@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>落尘文学_原创网络文学,免费手机小说阅读</title>
+    <meta name="keywords" content="落尘文学,小说排行榜,小说排行,手机阅读" />
+    <meta name="description" content="落尘文学提供恐怖小说、灵异小说、玄幻小说、武侠小说、都市小说等小说在线阅读、手机阅读。" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <style>
+        .tab-container .tab-item {
+            width: 25%;
+            height: 2rem;
+            line-height: 2rem;
+            background-color: grey;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .tab-container .tab-item-a {
+            background-color: darkolivegreen;
+        }
+        
+        .change-container .change-item {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="tab-container flex">
+        <li class="tab-item tab-item-a">1</li>
+        <li class="tab-item">2</li>
+        <li class="tab-item">3</li>
+        <li class="tab-item">4</li>
+    </ul>
+    <ul class="change-container">
+        <li class="change-item" style="display: block;">脑残</li>
+        <li class="change-item">真蠢</li>
+        <li class="change-item">脑子有点笨</li>
+        <li class="change-item">远离蠢比</li>
+    </ul>
+    <script type="text/javascript">
+        var tab = document.getElementsByClassName("tab-item");
+        var change = document.getElementsByClassName("change-item");
+        for (var i = 0; i < tab.length; i++) {
+            var index; //获取当前元素的下标
+            tab[i].index = i;
+            console.log(tab[i].index)
+            tab[i].onclick = function(e) {
+                for (var j = 0; j < tab.length; j++) {
+                    tab[j].className = "tab-item";
+                }
+                e.target.className = "tab-item tab-item-a";
+                for (var k = 0; k < change.length; k++) {
+                    change[k].style.display = "none";
+                }
+                change[this.index].style.display = "block";
+                // // for (var j = 0; j < rote.length; j++) {
+                // //     rote[j].className = "rote-item";
+                // // }
+                // // for(var j=0;j<rote.length;j++){
+                // //     rote[this.index]
+                // // }
+                // rote[this.index].className = "rote-item rote-item-a";
+                // // console.log(this.index)
+                // // debugger
+            }
+        }
+
+
+
+        //匿名函数
+        // (function() {
+
+        // }())
+        // //回调函数
+        // var fun = function(callback) {
+        //         if (typeof callback == "function") {
+        //             callback();
+        //         }
+        //     }
+        //     //递归函数 主要使用场景在于遍历查找
+        // var fn = function(n) {
+        //     if (n == 1) {
+        //         return 1;
+        //     }
+        //     return fn(n - 1) + n;
+        // }
+        // console.log(fn(10));
+    </script>
+</body>
+
+</html>

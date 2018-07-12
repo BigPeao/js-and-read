@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>落尘文学</title>
+    <meta name="keywords" content="落尘文学,小说排行榜,小说排行,手机阅读" />
+    <meta name="description" content="落尘文学提供恐怖小说、灵异小说、玄幻小说、武侠小说、都市小说等小说在线阅读、手机阅读。" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--<link rel="stylesheet" type="text/css" href="css/common.css"/>-->
+    <style>
+        input,select,textarea{font-family:inherit;box-sizing:border-box}
+        input[type=text]{-webkit-border-radius:0}
+        input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none;}
+        .dialog{position: fixed;top: 0;left: 0;z-index: 10;width: 100%;height: 100%;background: rgba(0,0,0,0.4);}
+        .dialog .dialogBox{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);width: 75%;padding: 21px 15px 20px;min-height: 300px;border-radius: 5px;-webkit-border-radius: 5px;background-color: #fff;}
+        .dialog .dialog-title{font-size: 13px;color: #999;margin: 0 0 25px 16px;line-height: 20px;}
+        .dialog .promptError{visibility: hidden;color: #F76C5B;font-size: 12px;margin: 8px 0 10px;text-indent: 15px;}
+        .dialog .dialog-btn{display: flex;display: -webkit-flex;display: -webkit-box;-webkit-box-align: center;align-items: center;-webkit-align-items: center;height: 45px;border: 1px solid #BDBDBD;border-radius: 40px;-webkit-border-radius: 40px;overflow: hidden;}
+        .dialog .btn-input{font-size: 12px;color: #757575;border: none;resize: none;outline: none;height: 100%;flex: 1;-webkit-flex: 1;-webkit-box-flex: 1;display: block;}
+        .dialog .btn-input::placeholder{color: #c4c4c4;}
+        .dialog .icon-user{width: 17.5px;height: 20px;margin:0 10px 0 20px;}
+        .dialog .icon-user img{display: block;width: 100%;}
+        .dialog .icon-code{width: 17.5px;height: 20px;margin:0 10px 0 20px;}
+        .dialog .icon-code img{width: 100%;display: block;}
+        .dialog .btn-send{padding: 0;margin: 0;background-color: #FCC8C2;width: 90px;height: 45px;line-height: 45px;text-align: center;color: #fff;font-size: 13px;}
+        .dialog .active{background-color: #F76C5B;}
+                .dialog .valid-time{color: #999;font-size: 11px;padding-top: 10px;text-indent: 15px;}
+        .dialog .SureInit{background-color: #FCC8C2;box-shadow: 1px 3px 15px -2px #FCC8C2;-webkit-box-shadow: 1px 3px 15px -2px #FCC8C2;border: none;outline: none;resize: none;height: 38px;width: 100%;color: #fff;font-size: 16px;border-radius: 20px;-webkit-border-radius: 20px;margin-top: 15px;}
+    </style>
+</head>
+
+<body>
+<div class="dialog">
+        <div class="dialogBox">
+            <div class="dialog-title">应国家法律要求，使用互联网服务需进行账户实名。为了保障您账户的正常使用，请完成手机验证，感谢您的理解和支持。</div>
+            <form class="dialog-content">
+                <div class="dialog-input">
+                    <div class="dialog-btn">
+                        <p class="icon-user"><img src="images/user.png"/></p>
+                        <input type="text" placeholder="请输入手机号" class="btn-input"/>
+                    </div>
+                    <p class="promptError">您输入的号码有误，请重新输入</p>
+                </div>
+                <div>
+                    <div class="dialog-btn">
+                        <p class="icon-code"><img src="images/code.png"/></p>
+                        <input type="text"  placeholder="请输入短信验证码" class="btn-input"/>
+                        <p class="btn-send active">发送验证码</p>
+                    </div>
+                    <p class="promptError">您输入的号码有误，请重新输入</p>
+                </div>
+                <p class="valid-time">当前验证码3分钟内有效，请在有效期内完成验证</p>
+                <input type="button" value="确定" class="SureInit SureActive"/>
+            </form>
+        </div>
+    </div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
